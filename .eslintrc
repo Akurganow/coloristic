@@ -11,6 +11,7 @@
   },
   "plugins": ["@typescript-eslint", "prettier"],
   "extends": [
+    "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:prettier/recommended",
     "prettier/@typescript-eslint",
@@ -32,7 +33,6 @@
     "no-restricted-properties": [0],
     "no-confusing-arrow": [0],
     "implicit-arrow-linebreak": [0],
-    "import/extensions": [2, { "js": "never" }],
     "no-underscore-dangle": [0],
     "comma-dangle": [2, "always-multiline"],
     "max-len": [2, 120, { "ignoreComments": true, "ignoreUrls": true }],

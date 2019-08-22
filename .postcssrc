@@ -6,14 +6,6 @@
       "features": {
         "nesting-rules": true
       }
-    },
-    "autoprefixer": {
-      "add": true,
-      "remove": false
-    },
-    "postcss-hexrgba": true,
-    "cssnano": {
-      "preset": "default"
     }
   }
 }
