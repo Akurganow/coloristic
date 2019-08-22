@@ -26,9 +26,7 @@
   "author": "Alex Kurganov <me@akurganow.ru>",
   "license": "ISC",
   "dependencies": {
-    "parcel-bundler": "^1.12.3",
-    "parcel-plugin-prepack": "0.0.0",
-    "prepack": "^0.2.54"
+    "parcel-bundler": "^1.12.3"
   },
   "devDependencies": {
     "@release-it/conventional-changelog": "^1.1.0",
