@@ -62,22 +62,10 @@ h6 {
 
 .container {
   width: 100%;
+  color: red;
 
   &.loaded {
-    animation: rotate 1000ms ease-out;
-  }
-}
-
-@keyframes rotate {
-  0% {
-    transform: rotate(0);
-  }
-
-  99% {
-    transform: rotate(360deg);
-  }
-
-  100% {
-    transform: rotate(0);
+    color: #000;
+    transition: color 1000ms ease-out;
   }
 }
