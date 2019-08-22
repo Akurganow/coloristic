@@ -1,0 +1,19 @@
+{
+  "plugins": {
+    "postcss-easing-gradients": true,
+    "postcss-preset-env": {
+      "stage": 3,
+      "features": {
+        "nesting-rules": true
+      }
+    },
+    "autoprefixer": {
+      "add": true,
+      "remove": false
+    },
+    "postcss-hexrgba": true,
+    "cssnano": {
+      "preset": "default"
+    }
+  }
+}
