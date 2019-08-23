@@ -26,7 +26,8 @@
   "author": "Alex Kurganov <me@akurganow.ru>",
   "license": "ISC",
   "dependencies": {
-    "parcel-bundler": "^1.12.3"
+    "parcel-bundler": "^1.12.3",
+    "posthtml-webp": "^1.1.0"
   },
   "devDependencies": {
     "@release-it/conventional-changelog": "^1.1.0",
