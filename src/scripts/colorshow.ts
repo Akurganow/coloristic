@@ -1,7 +1,5 @@
-function setHue(x: number, y: number): void {
-  const angle = Math.atan2(x, y) * (360 / Math.PI)
-
-  document.documentElement.style.setProperty('--colorshow-hue', `${angle}deg`)
+function setHue(value: number): void {
+  document.documentElement.style.setProperty('--colorshow-hue', `${value}deg`)
 }
 
 function start(): void {
@@ -9,14 +7,13 @@ function start(): void {
 
   if (!reducedMotionEnable) {
     const width = window.innerWidth
-    const height = window.innerHeight
+    const horBlock = width / 360
 
     document.body.onmousemove = (event: MouseEvent) => {
       window.requestAnimationFrame(() => {
         const cursorX = event.clientX
-        const cursorY = event.clientY
 
-        setHue(width - cursorX, height - cursorY)
+        setHue(cursorX / horBlock)
       })
     }
   }
