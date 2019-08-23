@@ -79,3 +79,4 @@ dist
 .vscode
 src/.DS_Store
 .gradle
+src/assets/.DS_Store

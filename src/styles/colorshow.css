@@ -1,0 +1,53 @@
+.colorshow {
+  position: relative;
+  max-width: var(--max-width);
+  padding: 0;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.colorshow-image {
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.colorshow-back {
+  position: relative;
+  height: auto;
+  z-index: 0;
+}
+
+.colorshow-front {
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+
+  body:hover & {
+    transition: filter 16ms linear;
+    filter: hue-rotate(var(--colorshow-hue));
+  }
+
+  body:not(:hover) & {
+    animation: colorshow 10000ms infinite linear;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    animation: none !important;
+    filter: none !important;
+  }
+}
+
+@keyframes colorshow {
+  0% {
+    filter: hue-rotate(var(--colorshow-hue));
+  }
+
+  100% {
+    filter: hue-rotate(calc(var(--colorshow-hue) + 360deg));
+  }
+}
